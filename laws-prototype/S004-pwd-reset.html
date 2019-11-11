@@ -39,6 +39,7 @@
 					<li class="nav-item"><a class="nav-link"
 						href="S002-about-us.html">About Us</a></li>
 				</ul>
+
 				<form class="form-inline my-2 my-lg-0">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active"><a class="nav-link"
@@ -51,45 +52,45 @@
 		</nav>
 	</header>
 
-
 	<div class="container-fluid">
 		<div class="jumbotron-fluid"
 			style="min-height: 100vh; padding-top: 4rem; margin-bottom: 0px;">
 			<div class="row justify-content-center">
-
-				<div class="col-md-4 ">
-					<form class="p-4" action="#">
-						<h5 class="pb-2">LOGIN</h5>
+				<div class="col-md-6 ">
+					<form class="p-4">
+						<h5 class="pb-2">Change Password</h5>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
 									<i class="fas fa-envelope"></i> <label class="mb-0"
-										for="txtEmail">Email</label><input type="text" id="txtEmail"
-										name="email" class="form-control form-control-sm"
-										autofocus="autofocus" autocomplete="off"> <small
-										id="emailHelp" class="form-text text-muted text-right">We'll
-										never share your email with anyone else.</small>
+										for="txtEmail">Email </label><input type="text" id="txtEmail"
+										value="abcde@gmail.com" class="form-control form-control-sm"
+										autocomplete="off" disabled="disabled">
 								</div>
 							</div>
-						</div>
-						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
 									<i class="fas fa-unlock-alt"></i> <label class="mb-0"
-										for="txtPassword">Password</label><input type="password"
-										id="txtPassword" name="password"
+										for="txtNewPassword">New Password</label><input
+										type="password" id="txtNewPassword" name="newPassword"
 										class="form-control form-control-sm" autocomplete="off">
-									<a href="S004-pwd-reset-request.html"
-										class="text-decoration-none"><small
-										class="form-text text-right ">Forgot Password</small></a>
+
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<i class="fas fa-unlock-alt"></i> <label class="mb-0"
+										for="txtConfirmPassword">Confirm Password</label><input
+										type="password" id="txtConfirmPassword" name="confirmPassword"
+										class="form-control form-control-sm" autocomplete="off">
 								</div>
 							</div>
 						</div>
 						<div class="row justify-content-center pt-3">
 							<a class="btn btn-sm btn-secondary mr-2 col-md-2"
-								href="member/M003-sample-QA.html"><i
-								class="fas fa-sign-in-alt"></i> Login </a>
-
+								href="S001-dashboard.html">Cancel</a> <a
+								class="btn btn-sm btn-secondary mr-2 col-md-2"
+								href="S003-login.html">Save</a>
 						</div>
 					</form>
 				</div>
