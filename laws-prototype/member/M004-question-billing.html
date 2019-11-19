@@ -19,6 +19,12 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.css" />
 
 <title>Laws Consulting</title>
+
+<style>
+.cc-img {
+	margin: 0 auto;
+}
+</style>
 </head>
 <body>
 	<header>
@@ -75,57 +81,90 @@
 	<div class="container-fluid">
 		<div class="jumbotron-fluid"
 			style="min-height: 100vh; padding-top: 4rem; margin-bottom: 0px;">
-			<div class="row justify-content-center">
-				<div class="col-md-6 ">
-					<form class="p-4">
-						<h5 class="pb-2">INQUIRY</h5>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<i class="fas fa-gavel mr-1"></i><label class="mb-0"
-										for="txtLawyerType">Lawyer Type </label><select
-										class="form-control form-control-sm" id="txtLawyerType">
-										<option>Select</option>
-										<option>Lawyer Type 1</option>
-										<option>Lawyer Type 2</option>
-										<option>Lawyer Type 3</option>
-										<option>Lawyer Type 4</option>
-										<option>Lawyer Type 5</option>
-									</select>
-								</div>
 
+
+			<div class="row">
+				<div class="col-md-4 offset-4 col-sm-6 col-sm-offset-3 ">
+					<fieldset>
+						<legend>Credit Card Payment</legend>
+						<div class="form-group">
+							<label for="cc_name">Card Holder's Name</label> <input
+								type="text" class="form-control form-control-sm" id="cc_name"
+								pattern="\w+ \w+.*" title="First and last name"
+								required="required">
+						</div>
+						<div class="form-group row">
+							<label class="col-md-12">Card Number</label>
+							<div class="col-md-3">
+								<input type="text" class="form-control form-control-sm"
+									autocomplete="off" maxlength="4" pattern="\d{4}"
+									title="First four digits" required="">
 							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<i class="fas fa-user mr-1"></i><label class="mb-0"
-										for="txtLawyerName">Lawyer Name </label><select
-										class="form-control form-control-sm" id="txtLawyerName">
-										<option>Select</option>
-										<option>Lawyer Name 1</option>
-										<option>Lawyer Name 2</option>
-										<option>Lawyer Name 3</option>
-										<option>Lawyer Name 4</option>
-										<option>Lawyer Name 5</option>
-									</select>
-								</div>
+							<div class="col-md-3">
+								<input type="text" class="form-control form-control-sm"
+									autocomplete="off" maxlength="4" pattern="\d{4}"
+									title="Second four digits" required="">
 							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<i class="far fa-question-circle"></i> <label class="mb-0"
-										for="txtQuestion">Question </label>
-									<textarea id="txtQuestion" class="form-control form-control-sm"
-										rows="12" autocomplete="off"></textarea>
-								</div>
+							<div class="col-md-3">
+								<input type="text" class="form-control form-control-sm"
+									autocomplete="off" maxlength="4" pattern="\d{4}"
+									title="Third four digits" required="">
+							</div>
+							<div class="col-md-3">
+								<input type="text" class="form-control form-control-sm"
+									autocomplete="off" maxlength="4" pattern="\d{4}"
+									title="Fourth four digits" required="">
 							</div>
 						</div>
-						<div class="row justify-content-center pt-3">
-							<a class="btn btn-sm btn-secondary mr-2 col-md-2" href="#">Cancel</a>
-							<a class="btn btn-sm btn-secondary mr-2 col-md-2"
-								href="M004-question-billing.html">Ask Question</a>
+						<div class="form-group row">
+							<label class="col-md-12">Card Expiry Date</label>
+							<div class="col-md-9">
+								<select class="form-control form-control-sm" name="cc_exp_mo">
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+									<option value="04">April</option>
+									<option value="05">May</option>
+									<option value="06">June</option>
+									<option value="07">July</option>
+									<option value="08">August</option>
+									<option value="09">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							</div>
+							<div class="col-md-3">
+								<select class="form-control form-control-sm" name="cc_exp_yr">
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+									<option>2020</option>
+									<option>2021</option>
+									<option>2022</option>
+								</select>
+							</div>
 						</div>
-					</form>
+						<div class="form-group row">
+							<label class="col-md-12">Card CVV</label>
+							<div class="col-md-3">
+								<input type="text" class="form-control form-control-sm"
+									autocomplete="off" maxlength="3" pattern="\d{3}"
+									title="Three digits at back of your card" required="">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-md-12 text-xs-right">
+								<button type="button" class="btn btn-sm btn-secondary">Cancel</button>
+								<button type="submit" class="btn btn-sm btn-secondary">Submit</button>
+							</div>
+						</div>
+					</fieldset>
 				</div>
 			</div>
+
+
 		</div>
 	</div>
 
