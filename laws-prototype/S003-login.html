@@ -21,6 +21,56 @@
 <title>Laws Consulting</title>
 </head>
 <body>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row justify-content-center">
+
+						<div class="col-md-10 ">
+							<form class="p-4" action="#">
+								<h5 class="pb-2">LOGIN</h5>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<i class="fas fa-envelope"></i> <label class="mb-0"
+												for="txtEmail">Email</label><input type="text" id="txtEmail"
+												name="email" class="form-control form-control-sm"
+												autofocus="autofocus" autocomplete="off"> <small
+												id="emailHelp" class="form-text text-muted text-right">We'll
+												never share your email with anyone else.</small>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<i class="fas fa-unlock-alt"></i> <label class="mb-0"
+												for="txtPassword">Password</label><input type="password"
+												id="txtPassword" name="password"
+												class="form-control form-control-sm" autocomplete="off">
+											<a href="S004-pwd-reset-request.html"
+												class="text-decoration-none"><small
+												class="form-text text-right ">Forgot Password</small></a>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center pt-3">
+									<a class="btn btn-sm btn-secondary mr-2 col-md-4"
+										href="member/M004-question-create-1.html"><i
+										class="fas fa-sign-in-alt"></i> Login </a>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
 			<a class="navbar-brand" href="S001-home.html">Laws Consulting</a>
@@ -35,6 +85,12 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="S001-home.html"><i
 							class="fa fa-home mr-1"></i>Home </a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="S007-sample-qa.html"><i
+							class="far fa-question-circle mr-1"></i>Sample Q/A </a></li>
+					<li class="nav-item"><a class="nav-link" href="#"
+						data-toggle="modal" data-target="#exampleModalCenter"><i
+							class="fas fa-plus pl-2"></i> INQUIRY </a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="S002-about-us.html"><i class="fas fa-users mr-1"></i>About
 							Us</a></li>
