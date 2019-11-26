@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.module .collapse, .module .collapsing {
+  height: 3rem;  /* [NUM_OF_LINES] x [LINE_HEIGHT] */
+}
+
+.module .collapse {
+  position: relative;  /* For ...'s content absolute positioning */
+  display: block;
+  overflow: hidden;
+}
+
+.module .collapse:before {
+  content: ' ...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.module .collapse.show {
+  height: auto;  /* You need to reset the height when not collapsed */
+}
+
+.module .collapse.show:before {
+  display: none;  /* Of course you don't want to display ... */
+}
+
+.module a.collapsed:after {
+  content: '+ Show More';
+}
+
+.module a:not(.collapsed):after {
+  content: '- Show Less';
+}
