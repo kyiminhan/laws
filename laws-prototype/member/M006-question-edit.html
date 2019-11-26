@@ -19,12 +19,6 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.css" />
 
 <title>Laws Consulting</title>
-
-<style>
-.cc-img {
-	margin: 0 auto;
-}
-</style>
 </head>
 <body>
 	<header>
@@ -41,7 +35,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="S001-home.html"><i
 							class="fa fa-home mr-1"></i>Home </a></li>
-					<li class="nav-item"><a class="nav-link"
+					<li class="nav-item active"><a class="nav-link"
 						href="M003-dashboard.html"><i
 							class="fas fa-chalkboard-teacher mr-1"></i>DashBoard </a></li>
 					<li class="nav-item"><a class="nav-link"
@@ -50,8 +44,8 @@
 					<li class="nav-item"><a class="nav-link"
 						href="S007-sample-qa.html"><i
 							class="far fa-question-circle mr-1"></i>Sample Q/A </a></li>
-					<li class="nav-item active"><a class="nav-link"
-						href="M004-question-create-1.html"><i class="fas fa-plus pl-2"></i>
+					<li class="nav-item"><a class="nav-link"
+						href="M005-question-create-1.html"><i class="fas fa-plus pl-2"></i>
 							INQUIRY </a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="S002-about-us.html"><i class="fas fa-users mr-1"></i>About
@@ -95,98 +89,81 @@
 	</header>
 
 	<div class="container-fluid">
-		<div class="jumbotron-fluid"
-			style="min-height: 100vh; padding-top: 4rem; margin-bottom: 0px;">
+		<div class="jumbotron"
+			style="min-height: 100vh; padding-top: 5rem; margin-bottom: 0px;">
 
+			<div class="row justify-content-center">
+				<div class="col-md-8 ">
+					<h5 class="mb-3">Edit Question</h5>
+					<div class="media mb-3">
+						<img src="../imgs/default-user.png" class="mr-3"
+							alt="Responsive image" width="40px">
+						<div class="media-body">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="mt-0">
+										<a class="text-decoration-none" href="#">Barry Turner</a>
+									</h6>
+								</div>
+								<div class="col-md-6 small text-right">
+									<a class="text-decoration-none pr-2"
+										href="M004-question-history.html">History</a><label>2019/11/21</label>
+								</div>
+							</div>
 
-			<div class="row">
-				<div class="col-md-4 offset-4 col-sm-6 col-sm-offset-3 ">
-					<fieldset>
-						<legend>Credit Card Payment</legend>
-						<div class="form-group">
-							<label for="cc_name">Card Holder's Name</label> <input
-								type="text" class="form-control form-control-sm" id="cc_name"
-								pattern="\w+ \w+.*" title="First and last name"
-								required="required">
+							<small>Dear all, I just looked in on the Philadelphia
+								court system concerning the qualifications of jurors. As it
+								happens, I was called to report to jury duty this past Winter,
+								and was questioned by a judge (chiefly because I reject the
+								death penalty). In any case, not responding to a call to jury
+								duty is a punishable offense under Pennsylvania law. So, I did
+								my duty, I showed up, and I was qualified to serve. The judge,
+								and both the prosecutor and the defense lawyer can object to
+								particular possible jurors and keep them from being empaneled.
+								In consequence, the actual trial is proceeded by a process of
+								jury selection, in which all parties to the case are present.
+								Here is the list of qualifications for members of a jury in
+								Philadelphia (where trial by jury has been practiced for
+								hundreds of years--since the 17th century, I would think): In
+								order to qualify for jury service, you must meet the following
+								requirements: You must be able to read, write, and speak the
+								English language. You must not have been convicted of a crime
+								punishable by imprisonment for more than one year. You must be
+								physically and mentally able to perform the functions of a
+								juror. You must be a United States citizen at the time you are
+								summoned. You must be a Philadelphia resident and at least 18
+								years of age. If you are not mentally or physically able to
+								serve as a juror, provide medical certification in the remarks
+								section of the questionnaire. If you are requesting to be
+								excused for a job related reason, your employer should certify
+								the hardship in the remarks section.</small>
+
 						</div>
-						<div class="form-group row">
-							<label class="col-md-12">Card Number</label>
-							<div class="col-md-3">
-								<input type="text" class="form-control form-control-sm"
-									autocomplete="off" maxlength="4" pattern="\d{4}"
-									title="First four digits" required="">
-							</div>
-							<div class="col-md-3">
-								<input type="text" class="form-control form-control-sm"
-									autocomplete="off" maxlength="4" pattern="\d{4}"
-									title="Second four digits" required="">
-							</div>
-							<div class="col-md-3">
-								<input type="text" class="form-control form-control-sm"
-									autocomplete="off" maxlength="4" pattern="\d{4}"
-									title="Third four digits" required="">
-							</div>
-							<div class="col-md-3">
-								<input type="text" class="form-control form-control-sm"
-									autocomplete="off" maxlength="4" pattern="\d{4}"
-									title="Fourth four digits" required="">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-md-12">Card Expiry Date</label>
-							<div class="col-md-9">
-								<select class="form-control form-control-sm" name="cc_exp_mo">
-									<option value="01">January</option>
-									<option value="02">February</option>
-									<option value="03">March</option>
-									<option value="04">April</option>
-									<option value="05">May</option>
-									<option value="06">June</option>
-									<option value="07">July</option>
-									<option value="08">August</option>
-									<option value="09">September</option>
-									<option value="10">October</option>
-									<option value="11">November</option>
-									<option value="12">December</option>
-								</select>
-							</div>
-							<div class="col-md-3">
-								<select class="form-control form-control-sm" name="cc_exp_yr">
-									<option>2016</option>
-									<option>2017</option>
-									<option>2018</option>
-									<option>2019</option>
-									<option>2020</option>
-									<option>2021</option>
-									<option>2022</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-md-12">Card CVV</label>
-							<div class="col-md-3">
-								<input type="text" class="form-control form-control-sm"
-									autocomplete="off" maxlength="3" pattern="\d{3}"
-									title="Three digits at back of your card" required="">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-12 text-xs-right">
-								<a class="btn btn-sm btn-secondary mr-2 col-md-2"
-									href="M004-question-create-1.html">Back</a> <a
-									class="btn btn-sm btn-secondary mr-2 col-md-2"
-									href="M004-question-create-3-success.html">Submit</a>
-							</div>
-							<!-- 							<div class="row justify-content-center pt-3"> -->
-							<!-- 							<a class="btn btn-sm btn-secondary mr-2 col-md-2" href="#">Cancel</a> -->
-							<!-- 							<a class="btn btn-sm btn-secondary mr-2 col-md-2" -->
-							<!-- 								href="M004-question-create-2-billing.html">Ask Question</a> -->
-							<!-- 						</div> -->
-						</div>
-					</fieldset>
+					</div>
 				</div>
 			</div>
 
+			<div class="row justify-content-center">
+				<div class="col-md-8 ">
+					<form class="p-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<i class="far fa-question-circle"></i> <label class="mb-0"
+										for="txtQuestion">Question </label>
+									<textarea id="txtQuestion" class="form-control form-control-sm"
+										rows="12" autocomplete="off"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-center pt-3">
+							<a class="btn btn-sm btn-secondary mr-2 col-md-2"
+								href="M003-dashboard.html">Back</a> <a
+								class="btn btn-sm btn-secondary mr-2 col-md-2" href="#">Edit</a>
+						</div>
+					</form>
+				</div>
+			</div>
 
 		</div>
 	</div>

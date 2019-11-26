@@ -35,7 +35,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="S001-home.html"><i
 							class="fa fa-home mr-1"></i>Home </a></li>
-					<li class="nav-item active"><a class="nav-link"
+					<li class="nav-item"><a class="nav-link"
 						href="M003-dashboard.html"><i
 							class="fas fa-chalkboard-teacher mr-1"></i>DashBoard </a></li>
 					<li class="nav-item"><a class="nav-link"
@@ -44,8 +44,8 @@
 					<li class="nav-item"><a class="nav-link"
 						href="S007-sample-qa.html"><i
 							class="far fa-question-circle mr-1"></i>Sample Q/A </a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="M004-question-create-1.html"><i class="fas fa-plus pl-2"></i>
+					<li class="nav-item active"><a class="nav-link"
+						href="M005-question-create-1.html"><i class="fas fa-plus pl-2"></i>
 							INQUIRY </a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="S002-about-us.html"><i class="fas fa-users mr-1"></i>About
@@ -89,64 +89,42 @@
 	</header>
 
 	<div class="container-fluid">
-		<div class="jumbotron"
-			style="min-height: 100vh; padding-top: 5rem; margin-bottom: 0px;">
-
-			<div class="row justify-content-center">
-				<div class="col-md-8 ">
-					<h5 class="mb-3">Edit Question</h5>
-					<div class="media mb-3">
-						<img src="../imgs/default-user.png" class="mr-3"
-							alt="Responsive image" width="40px">
-						<div class="media-body">
-							<div class="row">
-								<div class="col-md-6">
-									<h6 class="mt-0">
-										<a class="text-decoration-none" href="#">Barry Turner</a>
-									</h6>
-								</div>
-								<div class="col-md-6 small text-right">
-									<a class="text-decoration-none pr-2"
-										href="M004-question-history.html">History</a><label>2019/11/21</label>
-								</div>
-							</div>
-
-							<small>Dear all, I just looked in on the Philadelphia
-								court system concerning the qualifications of jurors. As it
-								happens, I was called to report to jury duty this past Winter,
-								and was questioned by a judge (chiefly because I reject the
-								death penalty). In any case, not responding to a call to jury
-								duty is a punishable offense under Pennsylvania law. So, I did
-								my duty, I showed up, and I was qualified to serve. The judge,
-								and both the prosecutor and the defense lawyer can object to
-								particular possible jurors and keep them from being empaneled.
-								In consequence, the actual trial is proceeded by a process of
-								jury selection, in which all parties to the case are present.
-								Here is the list of qualifications for members of a jury in
-								Philadelphia (where trial by jury has been practiced for
-								hundreds of years--since the 17th century, I would think): In
-								order to qualify for jury service, you must meet the following
-								requirements: You must be able to read, write, and speak the
-								English language. You must not have been convicted of a crime
-								punishable by imprisonment for more than one year. You must be
-								physically and mentally able to perform the functions of a
-								juror. You must be a United States citizen at the time you are
-								summoned. You must be a Philadelphia resident and at least 18
-								years of age. If you are not mentally or physically able to
-								serve as a juror, provide medical certification in the remarks
-								section of the questionnaire. If you are requesting to be
-								excused for a job related reason, your employer should certify
-								the hardship in the remarks section.</small>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
+		<div class="jumbotron-fluid"
+			style="min-height: 100vh; padding-top: 4rem; margin-bottom: 0px;">
 			<div class="row justify-content-center">
 				<div class="col-md-8 ">
 					<form class="p-4">
+						<h5 class="pb-2">INQUIRY</h5>
 						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<i class="fas fa-gavel mr-1"></i><label class="mb-0"
+										for="txtLawyerType">Lawyer Type </label><select
+										class="form-control form-control-sm" id="txtLawyerType">
+										<option>Select</option>
+										<option>Lawyer Type 1</option>
+										<option>Lawyer Type 2</option>
+										<option>Lawyer Type 3</option>
+										<option>Lawyer Type 4</option>
+										<option>Lawyer Type 5</option>
+									</select>
+								</div>
+
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<i class="fas fa-user mr-1"></i><label class="mb-0"
+										for="txtLawyerName">Lawyer Name </label><select
+										class="form-control form-control-sm" id="txtLawyerName">
+										<option>Select</option>
+										<option>Lawyer Name 1</option>
+										<option>Lawyer Name 2</option>
+										<option>Lawyer Name 3</option>
+										<option>Lawyer Name 4</option>
+										<option>Lawyer Name 5</option>
+									</select>
+								</div>
+							</div>
 							<div class="col-md-12">
 								<div class="form-group">
 									<i class="far fa-question-circle"></i> <label class="mb-0"
@@ -157,14 +135,13 @@
 							</div>
 						</div>
 						<div class="row justify-content-center pt-3">
+							<a class="btn btn-sm btn-secondary mr-2 col-md-2" href="#">Clear</a>
 							<a class="btn btn-sm btn-secondary mr-2 col-md-2"
-								href="M003-dashboard.html">Back</a> <a
-								class="btn btn-sm btn-secondary mr-2 col-md-2" href="#">Edit</a>
+								href="M005-question-create-2-billing.html">Ask Question</a>
 						</div>
 					</form>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
