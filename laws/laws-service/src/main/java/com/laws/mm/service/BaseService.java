@@ -1,5 +1,7 @@
 package com.laws.mm.service;
 
-public interface BaseService {
+import java.io.Serializable;
+
+public interface BaseService<T extends Serializable> extends Serializable {
 
 }
